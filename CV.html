@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="Español">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi currículum vitae</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-gBQ2AxV7FluN62Z10X7/4jq4sb4v7h/4cLzFqpGWj3qYh0oBcztZt1dZg1jK0HZhPsE/LHbdG12zeyjP8uV7Sg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		/* Estilos para la barra de navegación */
+		nav {
+			background-color: #333;
+			overflow: hidden;
+			font-family: 'Poppins', sans-serif;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 9999;
+			height: 80px;
+			padding: 0 50px;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: 700;
+			transition: 0.3s;
+			margin-right: 20px;
+			position: relative;
+		}
+		nav a:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform 0.3s ease;
+		}
+		nav a:hover:before {
+			transform: scaleX(1);
+		}
+
+		/* Estilos para la imagen de perfil */
+		.profile-img-container {
+			display: flex;
+			justify-content: center;
+		}
+		.profile-img {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin: 20px auto;
+			box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+			transition: transform 0.3s ease;
+		}
+		.profile-img:hover {
+			transform: scale(1.05);
+		}
+		/* Estilos para las secciones */
+		section {
+			margin: 40px 0;
+			padding: 20px;
+			background-color: #f5f5f5;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+			transition: transform 0.3s ease;
+			position: relative;
+			overflow: hidden;
+		}
+		section:before {
+			content: "";
+			position: absolute;
+			top: -20px;
+			left: -20px;
+			right: -20px;
+			bottom: -20
+		}
+		section h1 {
+			font-family: 'Poppins', sans-serif;
+			font-size: 36px;
+			font-weight: 700;
+			color: #333;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			text-align: center;
+		}
+		section ul {
+			font-family: 'Poppins', sans-serif;
+			font-size: 20px;
+			line-height: 2;
+			color: #333;
+			margin-left: 40px;
+			margin-bottom: 20px;
+		}
+		section ul li {
+			list-style: none;
+			position: relative;
+			padding-left: 30px;
+		}
+		section ul li:before {
+			content: "\f0da";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 18px;
+			color: #333;
+		}
+
+		/* Estilos para el botón de más información */
+		.more-info-btn {
+			background-color: #333;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			font-size: 18px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Barra de navegación -->
+	<nav>
+		<a href="#datos-personales">Datos personales</a>
+		<a href="#experiencia-laboral">Experiencia laboral</a>
+		<a href="#educacion">Educación</a>
+		<a href="#habilidades">Habilidades</a>
+		<a href="#idiomas">Idiomas</a>
+	</nav>
+	<!-- Sección de datos personales -->
+	<section id="datos-personales">
+		<h1>Datos personales</h1>
+		<img class="profile-img" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Landon Griffin" text-align="center" >
+
+		<ul>
+			<li>Nombre: Landon Griffin</li>
+			<li>Correo electrónico: landon.griffin@example.com</li>
+			<li>Fecha de nacimiento: 1/12/1998</li>
+			<li>Dirección: 3597 Real Ln</li>
+			<li>Teléfono: (771) 254-3517</li>
+			<li>Contraseña: masaje</li>
+		</ul>
+	</section>
+
+	<!-- Sección de experiencia laboral -->
+	<section id="experiencia-laboral">
+		<h1>Experiencia laboral</h1>
+		<ul>
+			<li><b>Borcelle - Jefe de finanzas - Marzo 2018 - presente</b></li>
+			<li>Diseño , organización y ejecución de las estrategias financieras y contables de la empresa.
+				Planeamiento de presupuesto y seguimiento de cartera de inversiones nacionales y extranjeras.
+				Presentación de resultados mensuales ante la mesa directiva y gerencia.</li>
+			<li><b>Larana, Inc. - Analista Financiero Senior - Abril 2020 - Julio 2021</b></li>
+			<li>Estudio de propuesta de inversiones en base a la rentabilidad y viabilidad económica.
+				Gestión personalizada de clientes potenciales y en cartera.
+				Verificación de procedimientos, protocolos y normas.</li>
+			<!-- Agrega más elementos de lista según sea necesario -->
+		</ul>
+	</section>
+
+	<!-- Sección de educación -->
+	<section id="educacion">
+		<h1>Educación</h1>
+		<ul>
+			<li>Universidad Increíble - Licenciatura en Economía y Finanzas - 2016 </li>
+			<li>Colegio Secundario Increíble - Bachiller en Bienes y Servicios  - 2011 </li>
+		</ul>
+	</section>
+
+	<!-- Sección de habilidades -->
+	<section id="habilidades">
+		<h1>Habilidades</h1>
+		<ul>
+			<li>Seminario de Capacitación en Crypto</li>
+			<li>Analista Financiero Certificado</li>
+			<li>Experto en Excel</li>
+		</ul>
+	</section>
+	<section id="idiomas">
+		<h1>Idiomas</h1>
+		<ul>
+			<li>Inglés (Fluido)</li>
+			<li>Español (Fluido)</li>
+			<li>Otros idiomas (Nivel de habilidad)</li>
+		</ul>
+	</section>
+</body>
+</html>
